@@ -1,0 +1,21 @@
+[package]
+name = "AftermathNamingConflict"
+edition = "2024.beta"
+
+[dependencies.Sui]
+git = "https://github.com/MystenLabs/sui.git"
+subdir = "crates/sui-framework/packages/sui-framework"
+rev = "mainnet"
+
+[dependencies.ScallopProtocol]
+git = "git@github.com:scallop-io/sui-lending-protocol.git"
+subdir = "contracts/protocol"
+rev = "main"
+
+[dependencies.lending_core]
+git = "git@github.com:naviprotocol/protocol-interface.git"
+subdir = "lending_core"
+rev = "main"
+
+[addresses]
+naming_conflict = "0x0"
